@@ -62,9 +62,7 @@ export class UsersService {
   // }
 
   async find(role: UsersRoles, email: string) {
-    console.log(role, 'que pasa');
     const repo = getRepo(role);
-    console.log(repo, 'mmm');
     const users = await this[repo].findBy({ email });
     return users;
   }

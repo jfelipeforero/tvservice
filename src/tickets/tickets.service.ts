@@ -17,7 +17,7 @@ export class TicketsService {
 
   async create(ticketDto: any, session: any) {
     //  I tried to use @Transformer with class-tranformer instead of what
-    //  i did below but it couldn't make it work
+    //  i did below but I couldn't make it work
 
     ticketDto.lat = parseFloat(ticketDto.lat);
     ticketDto.lng = parseFloat(ticketDto.lng);
