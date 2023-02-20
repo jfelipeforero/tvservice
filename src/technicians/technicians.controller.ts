@@ -28,6 +28,8 @@ export class TechniciansController {
   //   return tech
   // }
 
+  // The endpoint receives the technician id through the session when signin in,
+  // so you must be authenticated in order to retrieve all the orders
   @Get('orders')
   async getTechnicianOrders(@Session() session: any) {
     const orders = await this.techniciansService.findAllOrders(session.userId);
