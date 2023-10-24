@@ -5,7 +5,7 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-This is a coding test developed with Nestjs
+This is a personal project developed with Nestjs
 This project creates a Nestjs app, a postgres database image and a database manager(pgAdmin4) with Docker, so you must have Docker installed in your machine.
 You can access the database once it is up and running in the following url:
 http://localhost:5050/
